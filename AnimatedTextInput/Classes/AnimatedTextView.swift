@@ -16,7 +16,7 @@ final internal class AnimatedTextView: UITextView {
         setup()
     }
 
-    private func setup() {
+    fileprivate func setup() {
         delegate = self
     }
 
@@ -35,37 +35,37 @@ extension AnimatedTextView: TextInput {
     }
 
     var textAttributes: [String: AnyObject] {
-        get { return typingAttributes }
+        get { return typingAttributes as [String : AnyObject] }
         set { self.typingAttributes = textAttributes }
     }
 }
 
 extension AnimatedTextView: UITextViewDelegate {
 
-    func textViewDidBeginEditing(textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         textInputDelegate?.textInputDidBeginEditing(self)
     }
 
-    func textViewDidEndEditing(textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         textInputDelegate?.textInputDidEndEditing(self)
     }
 
-    func textViewDidChange(textView: UITextView) {
+    func textViewDidChange(_ textView: UITextView) {
         textInputDelegate?.textInputDidChange(self)
     }
 
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             return textInputDelegate?.textInputShouldReturn(self) ?? true
         }
         return textInputDelegate?.textInput(self, shouldChangeCharactersInRange: range, replacementString: text) ?? true
     }
 
-    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         return textInputDelegate?.textInputShouldBeginEditing(self) ?? true
     }
 
-    func textViewShouldEndEditing(textView: UITextView) -> Bool {
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         return textInputDelegate?.textInputShouldEndEditing(self) ?? true
     }
 }
