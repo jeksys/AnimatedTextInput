@@ -48,6 +48,14 @@
 		955FE9E41D510DA80022C0EF /* AnimatedTextInputTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTextInputTests.swift; sourceTree = "<group>"; };
 		955FE9E81D51108A0022C0EF /* TestsInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestsInfo.plist; sourceTree = "<group>"; };
 		984E76A286835FB27BBBC690 /* Pods_AnimatedTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D0CE601DBE97E300F2734C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D5D0CE611DBE97E300F2734C /* AnimatedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLine.swift; sourceTree = "<group>"; };
+		D5D0CE621DBE97E300F2734C /* AnimatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextField.swift; sourceTree = "<group>"; };
+		D5D0CE631DBE97E300F2734C /* AnimatedTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextInput.swift; sourceTree = "<group>"; };
+		D5D0CE641DBE97E300F2734C /* AnimatedTextInputFieldConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextInputFieldConfigurator.swift; sourceTree = "<group>"; };
+		D5D0CE651DBE97E300F2734C /* AnimatedTextInputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextInputStyle.swift; sourceTree = "<group>"; };
+		D5D0CE661DBE97E300F2734C /* AnimatedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextView.swift; sourceTree = "<group>"; };
+		D5D0CE671DBE97E300F2734C /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		FC96906680158A6AEBA30E7E /* AnimatedTextInput.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AnimatedTextInput.podspec; path = ../AnimatedTextInput.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				D5D0CE5F1DBE97E300F2734C /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AnimatedTextInput */,
 				955FE9E01D510C420022C0EF /* Tests */,
@@ -151,6 +160,22 @@
 				984E76A286835FB27BBBC690 /* Pods_AnimatedTextInput_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5D0CE5F1DBE97E300F2734C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0CE601DBE97E300F2734C /* .gitkeep */,
+				D5D0CE611DBE97E300F2734C /* AnimatedLine.swift */,
+				D5D0CE621DBE97E300F2734C /* AnimatedTextField.swift */,
+				D5D0CE631DBE97E300F2734C /* AnimatedTextInput.swift */,
+				D5D0CE641DBE97E300F2734C /* AnimatedTextInputFieldConfigurator.swift */,
+				D5D0CE651DBE97E300F2734C /* AnimatedTextInputStyle.swift */,
+				D5D0CE661DBE97E300F2734C /* AnimatedTextView.swift */,
+				D5D0CE671DBE97E300F2734C /* UIViewExtensions.swift */,
+			);
+			name = Classes;
+			path = ../AnimatedTextInput/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

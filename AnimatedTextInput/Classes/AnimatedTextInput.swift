@@ -19,13 +19,13 @@ open class AnimatedTextInput: UIControl {
     open  weak var delegate: AnimatedTextInputDelegate?
     open fileprivate(set) var isActive = false
 
-    open var type: AnimatedTextInputType = .standard {
+    @IBInspectable open var type: AnimatedTextInputType = .standard {
         didSet {
             configureType()
         }
     }
 
-    open var placeHolderText = "Test" {
+    @IBInspectable open var placeHolderText = "Test" {
         didSet {
             placeholderLayer.string = placeHolderText
         }
